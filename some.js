@@ -1,3 +1,27 @@
+
+//is balanced
+let brackets = {
+    '(':')',
+    '{':'}',
+    '[':']'
+};
+
+
+
+
+function isBalanced (thestring) {
+    let tstring = thestring.split('');
+
+    let testarr= [];
+
+    for(let i = 0; i < thestring.length; i++){
+
+        brackets[testarr[testarr.length-1]] === tstring[i] ? testarr.pop() : testarr.push(tstring[i]); 
+
+    }    
+    return !testarr.length;
+ }
+
 ////////////// Permutations
 function permAlone(str) {
  
